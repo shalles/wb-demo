@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./prd/styles/index.css" />
+
+    <!-- 分享， 添加到主屏的快捷方式的名字 ios: ok; android: no(用title)-->
+    <meta name="apple-mobile-web-app-title" content="shalles add to main screen as app" />
+
+    <!--  -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!-- 设置状态栏的背景色 第一个是前提 第二个的content[default, black, black-translucent]-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- 号码识别 content:[no, yes] ios/android:ok-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- 邮箱识别 -->
+    <meta content="email=yes" name="format-detection" />
+
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    
+    <!-- wp a/input -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- ===============splash================ -->
+    <!-- iPhone -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 320px)" rel="apple-touch-startup-image">
+    <!-- iPhone (Retina) -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPad (portrait) -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+    <!-- iPad (landscape) -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+    <!-- iPad (Retina, portrait) -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPad (Retina, landscape) -->
+    <link href="https://d13yacurqjgara.cloudfront.net/users/277984/screenshots/2137439/dribb_dead_1x.jpg" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    
+
+    <!-- 设计原图 -->
+    <link href="short_cut_114x114.png" rel="apple-touch-icon-precomposed">
+    <!-- 添加高光效果 -->
+    <link href="short_cut_114x114.png" rel="apple-touch-icon">
+    
+
+
+</head>
+<body>
+    <code>
+        <pre>
+        var name = "shalles"
+        function getName(){
+            return name;            
+        }
+        </pre>
+    </code>
+
+    <!-- 号码识别 -->
+    connect me: 13120456389<br />
+    
+    <!-- 此种情况不收meta控制 all:ok -->
+    <a href="tel:13120456389">tel to shalles</a>
+    <br>
+    <a href="sms:13120456389">sms to shalles</a>
+    <br>
+    <!-- 邮件识别 -->
+    <a mailto:shalles@163.com>mail to shalles</a>
+    <br> 
+    
+    <!-- 控制手写字母大写  ios: ok -->
+    <input type="text" autocapitalize="off">
+
+    <!-- placeholder  type呼起键盘  ok -->
+    <input type="tel" name="pn" value="" placeholder="13120456389">
+    <br>
+    <input type="button" name="ccc" value="test default style">
+    <br>
+    <textarea name="fff" id="ddd" cols="30" rows="10">
+        我只是看看body的滚动条
+    </textarea>
+    <br>
+
+
+    <!-- 选择照片 ok -->
+    <input type=file accept="image/*">
+    <!-- 选择视频 ok -->
+    <input type=file accept="video/*">
+    
+    <!-- 长按保存 -->
+    <img src="./src/images/1.png" alt="">
+
+    <!-- test 隐藏元素背面 -->
+    <div class="ani-box">
+        <div class="ani-body"></div>
+    </div>
+
+    <div class="no-property">
+        it's empty with no style of Class "no-property"
+    </div>
+    <script src="./prd/scripts/index.js"></script>
+</body>
+</html>

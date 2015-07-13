@@ -1,0 +1,102 @@
+/*[export]*/
+
+/*
+ * filename:    index.css
+ * author:  shalles
+ * E-mail:  shalles@163.com
+ * CreateTime:  2015-07-08 15:43:51
+*/
+
+body {
+    background-color: #f63;
+}
+
+/*控制横竖屏切换时是否重新计算字体等  PC端失效与meta viewport同用*/
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/*tap事件 按下链接或输入框（改变焦点）后的遮罩  ok*/
+a, button, input, textarea {
+
+    /*按下后的遮罩*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);    /**/
+    -webkit-user-modify: read-write-plaintext-only;
+}
+input {
+    margin-left: 20px;
+    padding: 6px 20px;
+}
+
+/*改变webkit表单输入框placeholder的颜色  ok*/
+input::-webkit-input-placeholder {
+    color: #FAb;
+}
+input:focus::-webkit-input-placeholder {
+    color: #EEE;
+}
+
+/*重置webkit表单元素默认外观*/
+input {
+    -webkit-appearance: none;
+}
+
+/*去除输入框内侧的阴影  ok*/
+input,textarea {
+
+    border: 0;
+
+    /*-webkit-appearance: none;*/
+}
+
+/*唤起先natival一样的滚动条  ios: ok*/
+body {
+    overflow: auto; /* auto | scroll */
+    -webkit-overflow-scrolling: touch;
+}
+
+/*禁止选中*/
+.user-select-none {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*禁止图片长按弹窗 ios:ok */
+img { 
+    -webkit-touch-callout: none; 
+}
+
+/*-----------------------横竖屏判断-------------------------*/
+/*ios/android: ok*/
+/*竖屏时使用的样式*/
+@media all and (orientation: portrait) {
+    body{
+        background-color: #f63;
+    }
+}
+
+/*横屏时使用的样式*/
+@media screen and (orientation:landscape) {
+    body{
+        background-color: #6f3;
+    }
+}
+/*------------------------------------------------*/
+
+
+/*消除transition闪屏*/
+.css{
+    /*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
+    -webkit-transform-style: preserve-3d;
+    /*（设置进行转换的元素的背面在面对用户时是否可见：隐藏）*/
+    -webkit-backface-visibility: hidden;
+}
+
+.css {
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+

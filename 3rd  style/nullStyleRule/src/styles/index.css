@@ -1,0 +1,20 @@
+/*[export]*/
+/*
+ * filename:	index.css
+ * author:	shalles
+ * E-mail:	shalles@163.com
+ * CreateTime:	2015-07-06 14:10:04
+*/
+
+body{
+    background-color: #fee;
+}
+
+.property{
+    box-shadow: 1px 1px 1px #eee;
+}
+
+.no-property{
+
+}
+
